@@ -1,0 +1,32 @@
+ul {
+    background: white !important;
+}
+
+li{
+    color: white !important;
+    margin-right: 30px;
+    padding-left: 6px;
+    padding-right: 10px;
+    width: 95% !important;
+    margin-top: 0px !important;
+    transition: color 0.6s !important;
+}
+
+li :only-child {
+    color: #3D3D3D;
+    transition: color 0.6s !important;
+}
+
+.top-0 {
+  background: #F64653 !important;
+  border-radius: 5px !important;
+  transition: background-color 0.5s !important;
+}
+
+.text-body {
+    font-family: 'Merriweather', sans-serif;
+}
+
+.text-titles {
+    font-family: 'Scramble Storm', sans-serif;
+}
