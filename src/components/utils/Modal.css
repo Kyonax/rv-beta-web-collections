@@ -1,0 +1,30 @@
+.letter-style {
+  background: #0f0d00 !important;
+  padding: 8px 9px 6px 9px;
+  color: #fff !important;
+  border-radius: 4px !important;
+  border: 1px solid #d9d3bd !important;
+  transition: border 0.3s !important;
+}
+
+.modal {
+  display: block; /* Hidden by default */  
+  position: fixed; /* Stay in place */  
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+}
+
+.color-text {
+  color: #d9d3bd;
+}
+
+.font-strech {
+  font-family: "Stretch Pro";
+}
+
+.text-titles {
+  font-family: "Scramble Storm", sans-serif;
+}
