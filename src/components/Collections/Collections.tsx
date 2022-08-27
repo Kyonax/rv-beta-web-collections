@@ -3,7 +3,7 @@ import React, { Suspense, lazy, useState, useEffect } from 'react'; import './Co
 import { LazyLoadImage } from 'react-lazy-load-image-component';
 import { Tabs, TabsHeader, TabsBody, Tab, TabPanel } from "@material-tailwind/react";
 import MagicEdenLogo from '../../assets/icons/MagicEden'; import axios from 'axios';
-import NoImage from '../../assets/No_Img.jpg'; import Modal from '../utils/Modal';
+import NoImage from '../../assets/No_Img.svg'; import Modal from '../utils/Modal';
 import ModalBusts from '../utils/ModalBusts'; import ModalHonorific from '../utils/ModalHonorific';
 
 interface CollectionsProps {
@@ -400,11 +400,11 @@ const Collections: React.FC<CollectionsProps> = ({ }) => {
                                 <div className="relative w-full grid lg:w-8/12">
                                     <div>
                                         <span className="flex">
-                                            <h2 className="text-titles text-4xl mr-3">Alpha rotten</h2>
-                                            <h2 className="text-titles text-4xl text-[#F64653]">sold out</h2>
+                                            <h2 className="text-titles text-4xl md:text-5xl mr-3">Alpha rotten</h2>
+                                            <h2 className="text-titles text-4xl md:text-5xl text-[#F64653]">sold out</h2>
                                             <div className='ml-4 mt-0 mb-2 border border-[#F64653] rounded-xl p-2 pl-4 pr-4'><a target={'_blank'} href="https://magiceden.io/marketplace/rotten_ville"> <MagicEdenLogo /> </a></div>
                                         </span>
-                                        <p className='text-[.8rem]'>Is a collection of 333 unique Rotten NFTs generated in high quality 3d. We are rotten but still good guys !!!</p>
+                                        <p className='text-[.8rem] md:text-[.9rem]'>Is a collection of 333 unique Rotten NFTs generated in high quality 3d. We are rotten but still good guys !!!</p>
                                     </div>
                                     <div>
                                         <p className="mt-6">
@@ -412,7 +412,7 @@ const Collections: React.FC<CollectionsProps> = ({ }) => {
                                             <div className='flex flex-wrap'>{
                                                 Object.keys(utilities.alpha).map(function (key: any) {
                                                     return <div className='mr-1 mb-1'>
-                                                        <span className='border border-[#F64653] rounded-md p-1 text-[.7rem]'> {utilities.alpha[key]}</span>
+                                                        <span className='border border-[#F64653] rounded-md p-1 text-[.7rem] md:text-[.8rem]'> {utilities.alpha[key]}</span>
                                                     </div>
                                                 })
                                             }</div>
@@ -458,11 +458,11 @@ const Collections: React.FC<CollectionsProps> = ({ }) => {
                                 <div className="relative w-full grid lg:w-8/12">
                                     <div>
                                         <span className="flex">
-                                            <h2 className="text-titles text-3xl md:text-4xl mr-3">bust sculptures</h2>
-                                            <h2 className="text-titles text-3xl md:text-4xl text-[#F64653]">sold out</h2>
+                                            <h2 className="text-titles text-3xl md:text-5xl mr-3">bust sculptures</h2>
+                                            <h2 className="text-titles text-3xl md:text-5xl text-[#F64653]">sold out</h2>
                                             <div className='ml-4 mt-0 mb-2 border border-[#F64653] rounded-xl p-2 pl-4 pr-4'><a target={'_blank'} href="https://magiceden.io/marketplace/rotten_ville_sculptures"> <MagicEdenLogo /> </a></div>
                                         </span>
-                                        <p className='text-[.8rem]'>Rotten Ville Bust Sculptures the 3D Object &amp; FREE MINT Collection with staking and token utility rewards.</p>
+                                        <p className='text-[.8rem] md:text-[.9rem]'>Rotten Ville Bust Sculptures the 3D Object &amp; FREE MINT Collection with staking and token utility rewards.</p>
                                     </div>
                                     <div>
                                         <p className="mt-6">
@@ -470,7 +470,7 @@ const Collections: React.FC<CollectionsProps> = ({ }) => {
                                             <div className='flex flex-wrap'>{
                                                 Object.keys(utilities.busts).map(function (key: any) {
                                                     return <div className='mr-1 mb-1'>
-                                                        <span className='border border-[#F64653] rounded-md p-1 text-[.7rem]'> {utilities.alpha[key]}</span>
+                                                        <span className='border border-[#F64653] rounded-md p-1 text-[.7rem] md:text-[.8rem]'> {utilities.alpha[key]}</span>
                                                     </div>
                                                 })
                                             }</div>
@@ -515,11 +515,11 @@ const Collections: React.FC<CollectionsProps> = ({ }) => {
                                 <div className="relative w-full grid lg:w-8/12">
                                     <div>
                                         <span className="flex">
-                                            <h2 className="text-titles text-3xl md:text-4xl mr-3">honorific</h2>
-                                            <h2 className="text-titles text-3xl md:text-4xl text-[#F64653]">exclusive</h2>
+                                            <h2 className="text-titles text-4xl md:text-5xl mr-3">honorific</h2>
+                                            <h2 className="text-titles text-4xl md:text-5xl text-[#F64653]">exclusive</h2>
                                             <div className='ml-4 mt-0 mb-2 border border-[#F64653] rounded-xl p-2 pl-4 pr-4'><a target={'_blank'} href="https://magiceden.io/creators/rotten_ville"> <MagicEdenLogo /> </a></div>
                                         </span>
-                                        <p className='text-[.8rem]'>The Honorific Collection of the Rotten Ville project. Let's build the RottenVerse together!</p>
+                                        <p className='text-[.8rem] md:text-[.9rem]'>The Honorific Collection of the Rotten Ville project. Let's build the RottenVerse together!</p>
                                     </div>
                                     <div>
                                         <p className="mt-6">
@@ -527,7 +527,7 @@ const Collections: React.FC<CollectionsProps> = ({ }) => {
                                             <div className='flex flex-wrap'>{
                                                 Object.keys(utilities.honorific).map(function (key: any) {
                                                     return <div className='mr-1 mb-1'>
-                                                        <span className='border border-[#F64653] rounded-md p-1 text-[.7rem]'> {utilities.honorific[key]}</span>
+                                                        <span className='border border-[#F64653] rounded-md p-1 text-[.7rem] md:text-[.8rem]'> {utilities.honorific[key]}</span>
                                                     </div>
                                                 })
                                             }</div>

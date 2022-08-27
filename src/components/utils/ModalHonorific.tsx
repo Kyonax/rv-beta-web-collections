@@ -66,9 +66,9 @@ const Modal: React.FC<ModalProps> = ({ toggleModal, setToggleModal, cardProps })
                                     </div>
                                     <div className='grid grid-rows-6 gap-0 lg:w-3/5 pt-10 lg:pr-8 pb-10'>
                                         <div className='mt-[-1.3rem] mb-[-.5rem] md:mb-auto flex flex-wrap place-content-center lg:place-content-start row-span-1'>
-                                            <h1 className='text-titles text-[2.9rem] text-[#F64653] ml-3 mr-6'>Bust Sculpture</h1>
+                                            <h1 className='text-titles text-[2.9rem] text-[#F64653] ml-3 mr-6'>Honorific</h1>
                                             <div className='pt-4 grid'>
-                                                <span className='font-bold text-[1.3rem] mt-[-.2rem]'>{cardProps.data.name}</span>
+                                                <span className='font-bold text-[1.3rem] mt-[-.2rem]'>{cardProps.data.name.replace('Honorific','')}</span>
                                                 <span className='text-[.8rem] mt-[-1.4rem]'>{cardProps.origin_nft} - Origin</span>
                                             </div>
                                         </div>
